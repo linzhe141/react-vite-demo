@@ -1,7 +1,7 @@
 .numberDisplay {
   display: flex;
   .wrap {
-    margin-right: 10px;
+    margin-right: 4px;
     display: flex;
     flex-direction: column;
     width: 24px;
@@ -9,6 +9,7 @@
     line-height: 30px;
     border-radius: 4px;
     color: #fff;
+    font-style: italic;
     background-color: #000;
     overflow: hidden;
     .numberItem {
