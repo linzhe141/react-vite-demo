@@ -1,0 +1,23 @@
+.numberDisplay {
+  display: flex;
+  .wrap {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 24px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #000;
+    overflow: hidden;
+    .numberItem {
+      margin-left: 50%;
+      transform: translate(-50%);
+      transition: all 0.5s;
+    }
+    .digitItem {
+      text-align: center;
+    }
+  }
+}
