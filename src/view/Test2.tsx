@@ -1,5 +1,7 @@
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
+import dayjs from "dayjs";
 import { fetchList } from "../api/index";
+import NumberDisplay from "@/components/NumberDisplay/NumberDisplay";
 export type ListItemProps = {
   name: string;
   id: number;
@@ -27,6 +29,18 @@ const Test2 = () => {
     getList();
     inputRef.current?.focus();
   }, []);
+  const [numberString, setNumberString] = useState("123");
+  const [time, setTime] = useState(Date.now());
+  useEffect(() => {
+    setInterval(() => {
+      setNumberString((numberString) => Number(numberString) + 1 + "");
+      setTime(Date.now());
+    }, 1000);
+  }, []);
+  const timeStr = useMemo(() => {
+    console.log(dayjs(time).format("HH:mm:ss"));
+    return dayjs(time).format("HH:mm:ss");
+  }, [time]);
   return (
     <>
       <input
@@ -36,11 +50,15 @@ const Test2 = () => {
           searchKeywodHandle(e.target.value, allList);
         }}
       />
-      <div style={{ height: "300px" }}>
+      <div>
         {filterList.map((item) => (
           <div key={item.id}>{item.name}</div>
         ))}
       </div>
+      <p>===========</p>
+      <NumberDisplay numberString={numberString} />
+      <p>===========</p>
+      <NumberDisplay numberString={timeStr} />
     </>
   );
 };
