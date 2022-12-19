@@ -27,7 +27,7 @@ const NumberDisplay: FC<Porps> = (props: Porps) => {
             </div>
           ) : (
             <div className={style.wrap} key={i}>
-              <div className={style.digitItem}>{digit}</div>
+              <div className={style.splitItem}>{digit}</div>
             </div>
           )
         )}
