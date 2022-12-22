@@ -10,6 +10,7 @@ const Layout = lazy(() => import("@/layout/Layout"));
 const ViewContent = lazy(() => import("@/layout/ViewContent"));
 const Test1 = lazy(() => import("@/view/Test1"));
 const Test2 = lazy(() => import("@/view/Test2"));
+const Test3 = lazy(() => import("@/view/Test3"));
 const staticRoutes = [
   {
     path: "/login",
@@ -44,6 +45,14 @@ const authRoutes = [
         element: (
           <ViewContent>
             <Test2 />
+          </ViewContent>
+        ),
+      },
+      {
+        path: "/test3",
+        element: (
+          <ViewContent>
+            <Test3 />
           </ViewContent>
         ),
       },

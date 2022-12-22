@@ -24,6 +24,16 @@ const Sider = () => {
           Test2
         </NavLink>
       </div>
+      <div>
+        <NavLink
+          to="test3"
+          className={({ isActive }) =>
+            isActive ? style["link-active"] : style.link
+          }
+        >
+          Test3
+        </NavLink>
+      </div>
     </div>
   );
 };

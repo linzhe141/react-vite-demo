@@ -1,0 +1,9 @@
+{
+  "tabWidth": 2,
+  "useTabs": false,
+  "vue/no-mutating-props": 0,
+  "vue/multi-word-component-names": 0,
+  "vue/no-unused-vars": "off",
+  "no-unused-vars": "off",
+  "no-undef": 0
+}
