@@ -8,9 +8,10 @@ const NotNetwork = lazy(() => import("@/view/error/500"));
 
 const Layout = lazy(() => import("@/layout/Layout"));
 const ViewContent = lazy(() => import("@/layout/ViewContent"));
-const Test1 = lazy(() => import("@/view/Test1"));
-const Test2 = lazy(() => import("@/view/Test2"));
-const Test3 = lazy(() => import("@/view/Test3"));
+const Test1 = lazy(() => import("@/view/test1/Test1"));
+const Test2 = lazy(() => import("@/view/test2/Test2"));
+const Test3 = lazy(() => import("@/view/test3/Test3"));
+const Test4 = lazy(() => import("@/view/test4/Test4"));
 const staticRoutes = [
   {
     path: "/login",
@@ -53,6 +54,14 @@ const authRoutes = [
         element: (
           <ViewContent>
             <Test3 />
+          </ViewContent>
+        ),
+      },
+      {
+        path: "/test4",
+        element: (
+          <ViewContent>
+            <Test4 />
           </ViewContent>
         ),
       },

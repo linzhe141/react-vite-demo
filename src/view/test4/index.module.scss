@@ -1,0 +1,16 @@
+.wrap {
+  height: 300px;
+  width: 500px;
+  background-color: #fff;
+  overflow: hidden;
+  &:active {
+    // background: red;
+    box-shadow: inset 0px 0px 90px 1px #c1c1c1;
+    cursor: pointer;
+  }
+  .xxx {
+    height: 100%;
+    background: url("../../assets/images/login_left.png");
+    background-size: cover;
+  }
+}

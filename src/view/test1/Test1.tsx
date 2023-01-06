@@ -1,5 +1,5 @@
 import MenuNav from "@/components/menunav/MenuNav";
-import { useMousemoveHooks } from "../hooks/useMousemoveHooks";
+import { useMousemoveHooks } from "../../hooks/useMousemoveHooks";
 const menuData = [
   {
     name: "test1",

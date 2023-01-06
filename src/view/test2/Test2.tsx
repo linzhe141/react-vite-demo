@@ -1,6 +1,6 @@
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import dayjs from "dayjs";
-import { fetchList } from "../api/index";
+import { fetchList } from "../../api/index";
 import NumberDisplay from "@/components/NumberDisplay/NumberDisplay";
 export type ListItemProps = {
   name: string;

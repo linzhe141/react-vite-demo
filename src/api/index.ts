@@ -1,4 +1,4 @@
-import { ListItemProps } from "../view/Test2";
+import { ListItemProps } from "../view/test2/Test2";
 export const fetchList = async () => {
   return await new Promise((resolve: (value: ListItemProps[]) => void) => {
     setTimeout(() => {
