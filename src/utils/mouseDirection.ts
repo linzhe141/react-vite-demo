@@ -37,8 +37,8 @@ export class MouseDirection {
   };
   onMoseUp = (event: MouseEvent) => {
     this.isMoveDown = false;
-    this.content.style.transition = "all 0.3s";
-    this.content.style.transform = "translateX(0px)";
+    // this.content.style.transition = "all 0.3s";
+    // this.content.style.transform = "translateX(0px)";
     if (this.direction === "left") {
       this.leftMoveCallback();
     }
@@ -50,13 +50,8 @@ export class MouseDirection {
   onMoseMove = (event: MouseEvent) => {
     if (!this.isMoveDown) return;
     const distance = event.offsetX - this.mouseDownCoord;
-    if (distance > 0) {
-      this.direction = "right";
-      this.content.style.transform = `translateX(${distance}px)`;
-    }
-    if (distance < 0) {
-      this.direction = "left";
-      this.content.style.transform = `translateX(${distance}px)`;
-    }
+    if (distance > 0) this.direction = "right";
+    if (distance < 0) this.direction = "left";
+    // this.content.style.transform = `translateX(${distance}px)`;
   };
 }

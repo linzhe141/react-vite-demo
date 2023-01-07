@@ -1,11 +1,11 @@
 import { FC, useState } from "react";
 import style from "./numberDisplay.module.scss";
 const numbers: number[] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-interface Porps {
+interface Props {
   numberString: string;
 }
 const numReg = /\d/;
-const NumberDisplay: FC<Porps> = (props: Porps) => {
+const NumberDisplay: FC<Props> = (props: Props) => {
   const { numberString } = props;
   return (
     <>
