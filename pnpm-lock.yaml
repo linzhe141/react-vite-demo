@@ -8,6 +8,7 @@ specifiers:
   '@vitejs/plugin-react': ^2.2.0
   antd: ^5.1.0
   dayjs: ^1.11.7
+  echarts: ^5.4.1
   normalize.css: ^8.0.1
   react: ^18.2.0
   react-dom: ^18.2.0
@@ -21,6 +22,7 @@ dependencies:
   '@reduxjs/toolkit': 1.9.1_k4ae6lp43ej6mezo3ztvx6pykq
   antd: 5.1.0_biqbaboplfbrettd7655fr4n2y
   dayjs: 1.11.7
+  echarts: 5.4.1
   normalize.css: 8.0.1
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -793,6 +795,13 @@ packages:
     resolution: {integrity: sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==}
     engines: {node: '>=12'}
     dev: true
+
+  /echarts/5.4.1:
+    resolution: {integrity: sha512-9ltS3M2JB0w2EhcYjCdmtrJ+6haZcW6acBolMGIuf01Hql1yrIV01L1aRj7jsaaIULJslEP9Z3vKlEmnJaWJVQ==}
+    dependencies:
+      tslib: 2.3.0
+      zrender: 5.4.1
+    dev: false
 
   /electron-to-chromium/1.4.284:
     resolution: {integrity: sha512-M8WEXFuKXMYMVr45fo8mq0wUrrJHheiKZf6BArTKk9ZBYCKJEOU5H8cdWgDT+qCVZf7Na4lVUaZsA+h6uA9+PA==}
@@ -2279,6 +2288,10 @@ packages:
       strip-bom: 3.0.0
     dev: true
 
+  /tslib/2.3.0:
+    resolution: {integrity: sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==}
+    dev: false
+
   /tslib/2.4.1:
     resolution: {integrity: sha512-tGyy4dAjRIEwI7BzsB0lynWgOpfqjUdq91XXAlIWD2OwKBH7oCl/GZG/HT4BOHrTlPMOASlMQ7veyTqpmRcrNA==}
     dev: true
@@ -2375,3 +2388,9 @@ packages:
     resolution: {integrity: sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==}
     engines: {node: '>= 6'}
     dev: true
+
+  /zrender/5.4.1:
+    resolution: {integrity: sha512-M4Z05BHWtajY2241EmMPHglDQAJ1UyHQcYsxDNzD9XLSkPDqMq4bB28v9Pb4mvHnVQ0GxyTklZ/69xCFP6RXBA==}
+    dependencies:
+      tslib: 2.3.0
+    dev: false
