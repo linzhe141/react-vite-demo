@@ -12,6 +12,7 @@ const Test1 = lazy(() => import("@/view/test1/Test1"));
 const Test2 = lazy(() => import("@/view/test2/Test2"));
 const Test3 = lazy(() => import("@/view/test3/Test3"));
 const Test4 = lazy(() => import("@/view/test4/Test4"));
+const ThreeFiber = lazy(() => import("@/view/threeFiber/ThreeFiber"));
 const staticRoutes = [
   {
     path: "/login",
@@ -62,6 +63,14 @@ const authRoutes = [
         element: (
           <ViewContent>
             <Test4 />
+          </ViewContent>
+        ),
+      },
+      {
+        path: "/threeFiber",
+        element: (
+          <ViewContent>
+            <ThreeFiber />
           </ViewContent>
         ),
       },

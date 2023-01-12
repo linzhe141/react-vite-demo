@@ -44,6 +44,16 @@ const Sider = () => {
           Test4
         </NavLink>
       </div>
+      <div>
+        <NavLink
+          to="threeFiber"
+          className={({ isActive }) =>
+            isActive ? style["link-active"] : style.link
+          }
+        >
+          ThreeFiber
+        </NavLink>
+      </div>
     </div>
   );
 };
